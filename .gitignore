@@ -1,0 +1,11 @@
+node_modules
+.npm
+.idea
+.idea/
+.tmp
+*#
+*~
+.DS_Store
+build
+npm-debug.log
+bower_components
