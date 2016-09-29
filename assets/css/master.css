@@ -1,0 +1,8 @@
+button {
+	padding: 8px !important;
+	margin: -5px 0;
+}
+
+.done .title, .done .message {
+	text-decoration: line-through;
+}
