@@ -1,8 +1,16 @@
-button {
-	padding: 8px !important;
-	margin: -5px 0;
+button.btn {
+	margin-left: 10px;
 }
 
-.done .title, .done .message {
+.done small, .done strong label {
 	text-decoration: line-through;
+}
+
+.create-todo-form strong {
+	display: inline-block;
+	padding-bottom: 25px;
+}
+
+label, input[type="checkbox"] {
+	cursor: pointer;
 }

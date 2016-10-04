@@ -1,6 +1,5 @@
-<form ng-submit="createTodo()">
-	<h4>Create a new Todo <button class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i></button></h4>
-	<hr>
+<form ng-submit="createTodo()" class="create-todo-form">
+	<button class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i></button><strong>Create a new Todo:</strong>
 	<div class="form-group">
 		<input required placeholder="Todo Title" ng-model="props.title" type="text" class="form-control"/>
 	</div>

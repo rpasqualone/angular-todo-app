@@ -8,12 +8,29 @@ angular.module('todoListApp')
 				props: '='
 			},
 			link: function ($scope) {
-				$scope.deleteTodo = function () {
-					Todo.delete($scope.props.id);
-				};
+				$scope.edit = false;
+
 				$scope.$watch('props.done', function (newValue) {
-					Todo.update($scope.props.id, { done: newValue });
+					Todo.update($scope.props.id, {done: newValue});
 				});
+
+				$scope.cancelEdit = function () {
+					Todo.refresh().then(function () {
+						$scope.edit = !$scope.edit;
+					});
+				};
+
+				$scope.updateTodo = function () {
+					Todo.update($scope.props.id, $scope.props).then(function () {
+						$scope.edit = false;
+					});
+				};
+
+				$scope.deleteTodo = function () {
+					Todo.delete($scope.props.id).then(function () {
+						Todo.refresh();
+					});
+				};
 			}
 		};
 	}]);
