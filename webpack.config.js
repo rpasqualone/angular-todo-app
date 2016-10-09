@@ -1,11 +1,13 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: [
-    './app/index.js'
+    './app/config.js'
   ],
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'config.js'
   },
   module: {
     loaders: [{
@@ -22,5 +24,10 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      API_URI: JSON.stringify(process.env.API_URI || 'http://localhost:3000/')
+    })
+  ]
 };

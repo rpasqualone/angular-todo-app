@@ -2,7 +2,7 @@
 
 angular.module('todoListApp').service('Todo', ['$resource', function ($resource) {
 	var self = this;
-	var resource = $resource('http://localhost:3000/todos/:id', {}, {
+	var resource = $resource(window.API_URI + 'todos/:id', {}, {
 		update: { method: 'patch' },
 		create: { method: 'post' }
 	});
