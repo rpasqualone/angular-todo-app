@@ -27,8 +27,8 @@ Click [here](https://github.com/rpasqualone/angular-todo-app/archive/master.zip)
 
 ###Demo###
 
-To view a live demo click [here](https://rpasqualone-node-todo-api.herokuapp.com/todos/) or visit:
+To view a live demo click [here](https://rpasqualone.github.io/angular-todo-app/) or visit:
 
 ```
-	> https://rpasqualone-node-todo-api.herokuapp.com/todos/
+	> https://rpasqualone.github.io/angular-todo-app/
 ```
