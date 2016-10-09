@@ -24,3 +24,11 @@ Click [here](https://github.com/rpasqualone/angular-todo-app/archive/master.zip)
 	> npm install
 	> npm start
 ```
+
+###Demo###
+
+To view a live demo click [here](https://rpasqualone.github.io/angular-todo-app/) or visit:
+
+```
+	> https://rpasqualone.github.io/angular-todo-app/
+```
