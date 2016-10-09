@@ -27,8 +27,10 @@ Click [here](https://github.com/rpasqualone/angular-todo-app/archive/master.zip)
 
 ###Demo###
 
-To view a live demo click [here](https://rpasqualone.github.io/angular-todo-app/) or visit:
+To view a live demo click [here](https://rpasqualone-node-todo-api.herokuapp.com/todos/) or visit:
 
 ```
-	> https://rpasqualone.github.io/angular-todo-app/
+	> https://rpasqualone-node-todo-api.herokuapp.com/todos/
 ```
+
+*POST, PATCH, GET, and DELETE REST Options
