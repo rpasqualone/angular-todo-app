@@ -1,0 +1,52 @@
+<html lang="en-us" ng-app="todoListApp">
+	<head>
+		<title>Understanding AnhularJS</title>
+		<meta charset="UTF-8">
+
+		<!-- load bootstrap -->
+		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="./assets/css/master.css"/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#/">AngularJS Todo List</a>
+					</div>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div ng-view></div>
+		</div>
+
+		<!-- config -->
+		<script src="config.js"></script>
+
+		<!-- angular -->
+		<script src="./node_modules/angular/angular.min.js"></script>
+
+		<!-- main -->
+		<script src="app/index.js"></script>
+
+		<!-- angular modules -->
+		<script src="./node_modules/angular-route/angular-route.min.js"></script>
+		<script src="./node_modules/angular-resource/angular-resource.min.js"></script>
+
+
+		<!-- services -->
+		<script src="app/services/Todo.js"></script>
+
+		<!-- directives -->
+		<script src="app/directives/todoList.js"></script>
+		<script src="app/directives/todo.js"></script>
+		<script src="app/directives/todoForm.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<form ng-submit="updateTodo()">
+	<div ng-class="{done: props.done, edit: edit}">
+		<button type="button" class="btn btn-danger pull-right" ng-click="deleteTodo()">
+			<i class="glyphicon glyphicon-minus"></i>
+		</button>
+		<button type="button" ng-class="{'btn-default': edit, 'btn-warning': !edit}" class="btn pull-right" ng-click="edit ? cancelEdit() : edit = !edit">
+			<i ng-class="{'glyphicon-pencil': !edit, 'glyphicon-remove': edit}" class="glyphicon"></i>
+		</button>
+		<strong><label><input type="checkbox" ng-model="props.done"/> {{props.title}}: </label></strong><small> {{props.message}}</small>
+		<button ng-show="edit" class="btn btn-success pull-right">
+			<i class="glyphicon glyphicon-plus"></i>
+		</button>
+
+		<div ng-show="edit">
+			<hr>
+			<div class="form-group">
+				<input type="text" class="form-control" ng-model="props.title" required />
+			</div>
+			<div class="form-group">
+				<textarea ng-model="props.message" class="form-control" required ></textarea>
+			</div>
+		</div>
+	</div>
+</form>
