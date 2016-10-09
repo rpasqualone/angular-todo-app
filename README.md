@@ -32,5 +32,3 @@ To view a live demo click [here](https://rpasqualone-node-todo-api.herokuapp.com
 ```
 	> https://rpasqualone-node-todo-api.herokuapp.com/todos/
 ```
-
-*POST, PATCH, GET, and DELETE REST Options
